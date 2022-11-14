@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <ul>
+        <li v-for="item in clazzes">{{item}}</li>
+    </ul>
+</div>
+<script src="js/vue2-7-14.js"></script>
+<script>
+    const app1 = new Vue({
+        el: '#app',
+        data: {
+            clazzes: ['软工1','软工2','软工3','软工4','软工5','软工6']
+        }
+    })
+</script>
+
+</body>
+</html>

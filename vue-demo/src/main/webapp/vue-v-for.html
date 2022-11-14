@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="app">
+    <div v-for="addr in addrs">
+        {{addr}}<br>
+    </div>
+    <hr>
+    <div v-for="(addr , i) in addrs">
+        {{i}}-----{{addr}}<br>
+    </div>
+</div>
+
+<!-- 引入vuejs -->
+<script src="js/vue.min.js"></script>
+<script>
+    // 1.创建vue核心对象
+    new Vue({
+        el: "#app",
+        data(){
+            return {
+                url: "",
+                count: 3,
+                addrs: ["武汉", "上海", "重庆"]
+            }
+        },
+        methods:{
+            show(){
+                alert("我被点了~~~")
+            }
+        },
+        mounted(){
+            alert("加载完成")
+        }
+    });
+</script>
+</body>
+</html>

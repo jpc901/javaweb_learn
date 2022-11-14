@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">{{message}}<br>
+    <h2>{{name}}</h2>
+</div>
+
+<script src="js/vue2-7-14.js"></script>
+<script>
+    //es中let定于变量，const定义常量
+    //vue为一个函数，其传入参数为对象
+    const app11 = new Vue({
+        el: '#app', //el用于挂载要管理的元素
+        data: {//data用于定义数据
+            message: 'hello vue',
+            name: 'just vue'
+        }
+    })
+</script>
+</body>
+</html>
